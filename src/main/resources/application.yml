@@ -1,0 +1,19 @@
+server:
+  shutdown: graceful
+  port: 9090
+
+spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 60s
+  datasource:
+    url: jdbc:mysql://localhost:3306/jobrunr
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+org:
+  jobrunr:
+    dashboard:
+      port: 9000
+      username: admin
+      password: admin
